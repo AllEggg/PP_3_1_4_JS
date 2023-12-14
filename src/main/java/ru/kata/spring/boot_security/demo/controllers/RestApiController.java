@@ -49,8 +49,7 @@ public class RestApiController {
 
     @GetMapping("/admin/{id}")
     public User getUserById(@PathVariable Long id) {
-        User user = userService.getUser(id);
-        return user;
+        return userService.getUser(id);
     }
 
     @GetMapping("/user")
